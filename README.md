@@ -38,24 +38,24 @@
 
 #### Functional Flow
 
-1. Adding to Cart
+1. Adding to Cart  
 Clicking the “Add to Cart” button dispatches `addItem(product)`.
 If the item already exists, its quantity is incremented; otherwise, it is added as a new entry.
 
-2. Cart Display
+2. Cart Display    
 Items in the Redux store are displayed inside CartItem.jsx.
 The user can increase or decrease quantity, or remove an item entirely.
 
-3. Cart Counter
+3. Cart Counter     
 The total number of cart items is displayed in the navbar as a live counter using
 `cart.items.reduce((sum, item) => sum + item.quantity, 0)`.
 
-4. Total Calculation
+4. Total Calculation     
 Product prices are stored as strings (e.g. "$15") and converted safely into numbers for arithmetic operations.
 
 
 #### Future Enhancements
 
-• Add a checkout process including payment and order confirmation.
-• Persist cart items using localStorage or a backend API.
-• Add search, sorting, and filtering for products.
+• Add a checkout process including payment and order confirmation.     
+• Persist cart items using localStorage or a backend API.     
+• Add search, sorting, and filtering for products.     
